@@ -1,0 +1,54 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+html * {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+}
+
+/* hide hamburger if not mobile */
+.is-menu {
+	display: none;
+}
+
+.ui.menu:not(.vertical) .item>.input {
+	margin: 0!important; /* remove the default negative margin */
+}
+
+/* mobile menu starts at 768px */
+@media only screen and (max-width: @tabletBreakpoint) {
+	.is-menu {
+		display: block;
+		z-index: 999;
+		position: absolute;
+	    top: 1rem;
+	    right: 10px;
+	    color: @primaryColor!important;
+	    font-size: 2em;
+	}
+
+	.ui.menu {
+		visibility: hidden;
+	}
+	.ui.menu>.container, 
+	.ui.menu>.grid {
+		width: 100%!important;
+		flex-direction: column!important;
+	}
+
+	.ui.menu .item {
+		border-bottom: 1px solid @borderColor;
+	}
+
+	.ui.menu:not(.vertical) .right.menu {
+		display: flex;
+		margin-left: 0!important;
+
+		.item {
+			border-bottom: 0;			
+		} 
+	}
+
+}

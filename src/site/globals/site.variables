@@ -1,0 +1,29 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@headerFont        : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+
+@textColor                 : #737c7f;
+@inputPlaceholderColor     : lighten(@textColor, 30);
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+
+/* The size of page text  */
+@fontSize : 16px;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
