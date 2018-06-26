@@ -3,9 +3,9 @@
 *******************************/
 
 html * {
-    -webkit-font-smoothing: antialiased;
+    	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
+    	font-smoothing: antialiased;
 }
 
 /* hide hamburger if not mobile */
@@ -23,17 +23,17 @@ html * {
 		display: block;
 		z-index: 999;
 		position: absolute;
-	    top: 1rem;
-	    right: 10px;
-	    color: @primaryColor!important;
-	    font-size: 2em;
+	    	top: 1rem;
+	    	right: 10px;
+	    	color: @primaryColor!important;
+	    	font-size: 2em;
 	}
 
 	.ui.menu {
 		visibility: hidden;
 	}
-	.ui.menu>.container, 
-	.ui.menu>.grid {
+	.ui.menu,
+	.ui.menu .right.menu {
 		width: 100%!important;
 		flex-direction: column!important;
 	}
@@ -42,13 +42,8 @@ html * {
 		border-bottom: 1px solid @borderColor;
 	}
 
-	.ui.menu:not(.vertical) .right.menu {
-		display: flex;
-		margin-left: 0!important;
-
-		.item {
-			border-bottom: 0;			
-		} 
+	.ui.menu .item:last-child {
+		border-bottom: 0;			
 	}
 
 }
